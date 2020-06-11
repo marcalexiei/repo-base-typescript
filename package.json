@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "name": "ts-project-base",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": "12.18.0",
+    "vscode": "^1.46.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "tsc",
+    "lint": "eslint --ext .js,.ts",
+    "lint:fix": "eslint --ext .js,.ts --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@typescript-eslint/eslint-plugin": "3.2.0",
+    "@typescript-eslint/parser": "3.2.0",
+    "eslint": "7.2.0",
+    "eslint-import-resolver-typescript": "2.0.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-prettier": "3.1.3",
+    "husky": "4.2.5",
+    "prettier": "2.0.5",
+    "typescript": "3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marcalexiei@github.com/marcalexiei/ts-project-base.git"
+  },
+  "authors": [
+    {
+      "name": "Marco Pasqualetti",
+      "email": "marco.pasqualetti@live.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcalexiei/ts-project-base/issues"
+  },
+  "homepage": "https://github.com/marcalexiei/ts-project-base#readme"
+}
