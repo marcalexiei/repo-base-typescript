@@ -86,9 +86,9 @@
         "code": 120
       }
     ],
-    "@typescript-eslint/no-use-before-define": [
-      "off"
-    ],
+
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-empty-function": [
       "error",
       {
@@ -96,9 +96,6 @@
           "methods"
         ]
       }
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "error"
     ]
   }
 }
