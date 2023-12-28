@@ -10,4 +10,4 @@
 ## Commit rules
 
 Commit message consistence is performed via [commitlint](https://github.com/conventional-changelog/commitlint).
-We are extening [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum). For more details about `type` and `scope` check `commitlint.config.js`
+We are extening [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum). For more details about `type` check `commitlint.config.cjs`

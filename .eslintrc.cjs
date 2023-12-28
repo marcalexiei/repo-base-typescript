@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 module.exports = {
   root: true,
   env: {
@@ -59,7 +58,7 @@ module.exports = {
     'prettier/prettier': ['error'],
 
     '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-magic-numbers': 'error',
     '@typescript-eslint/no-empty-function': [
       'error',
       {
@@ -69,9 +68,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['.eslintrc.cjs'],
+      files: ['.eslintrc.cjs', 'commitlint.config.cjs'],
       env: {
         node: true
+      },
+      rules: {
+        '@typescript-eslint/naming-convention': 'off'
       }
     }
   ]
