@@ -1,20 +1,23 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 module.exports = {
   root: true,
   env: {
     browser: true,
     es2020: true
   },
+  plugins: ['@typescript-eslint', 'import', 'prettier'],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/all',
     'plugin:import/errors',
     'plugin:import/typescript'
   ],
+
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: 'module'
+    sourceType: 'module',
+    project: './tsconfig.lint.json'
   },
   settings: {
     'import/parsers': {
@@ -23,16 +26,22 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        directory: './tsconfig.json'
+        directory: './tsconfig.lint.json'
       }
     }
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
   rules: {
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index'
+        ],
         pathGroups: [
           {
             pattern: '@_models/**',
@@ -46,18 +55,8 @@ module.exports = {
         }
       }
     ],
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 120,
-        singleQuote: true,
-        arrowParens: 'avoid',
-        trailingComma: 'none'
-      }
-    ],
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
+
+    'prettier/prettier': ['error'],
 
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
@@ -70,7 +69,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['.eslintrc.js'],
+      files: ['.eslintrc.cjs'],
       env: {
         node: true
       }
