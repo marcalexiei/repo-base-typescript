@@ -16,7 +16,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
-    project: './tsconfig.lint.json'
+    project: './tsconfig.json'
   },
   settings: {
     'import/parsers': {
@@ -25,7 +25,7 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        directory: './tsconfig.lint.json'
+        directory: './tsconfig.json'
       }
     }
   },
