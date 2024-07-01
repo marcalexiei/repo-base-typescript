@@ -1,15 +1,18 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 module.exports = {
   root: true,
+  ignorePatterns: ['dist'],
   env: {
     browser: true,
     es2020: true
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  plugins: ['@typescript-eslint', 'import'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/all',
     'plugin:import/errors',
-    'plugin:import/typescript'
+    'plugin:import/typescript',
+    'prettier'
   ],
 
   parser: '@typescript-eslint/parser',
@@ -55,8 +58,6 @@ module.exports = {
       }
     ],
 
-    'prettier/prettier': ['error'],
-
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-magic-numbers': 'error',
     '@typescript-eslint/no-empty-function': [
@@ -68,12 +69,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['.eslintrc.cjs', 'commitlint.config.cjs'],
+      files: ['.eslintrc.cjs'],
       env: {
         node: true
-      },
-      rules: {
-        '@typescript-eslint/naming-convention': 'off'
       }
     }
   ]
