@@ -18,7 +18,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        script: [lint, test]
+        script: [lint, test, build]
 
     steps:
       - uses: actions/checkout@v4

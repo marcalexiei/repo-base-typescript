@@ -1,3 +1,3 @@
-import { welcomeMessage } from '@_models/message';
+import { welcomeMessage } from './models/message';
 
 console.info(`message: ${welcomeMessage}`);

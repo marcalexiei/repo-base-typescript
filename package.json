@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "build:dev": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix"
   },
