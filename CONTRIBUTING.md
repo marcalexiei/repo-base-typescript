@@ -2,18 +2,18 @@
 
 ## Setup instructions
 
-clone repository on you local machine
+This repository uses:
+
+- `node` via [`nvm`](https://github.com/nvm-sh)
+- `pnpm` as package manager via `corepack`.
 
 ```shell
+# install nvm
 nvm use
 ```
 
 ```shell
-nvm use
-```
-
-```shell
-npm run build
+corepack use pnpm
 ```
 
 ## Commit rules

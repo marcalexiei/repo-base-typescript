@@ -4,7 +4,7 @@ module.exports = {
   ignorePatterns: ['dist'],
   env: {
     browser: true,
-    es2020: true
+    es2020: true,
   },
   plugins: ['@typescript-eslint', 'import'],
   extends: [
@@ -12,25 +12,25 @@ module.exports = {
     'plugin:@typescript-eslint/all',
     'plugin:import/errors',
     'plugin:import/typescript',
-    'prettier'
+    'prettier',
   ],
 
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts']
+      '@typescript-eslint/parser': ['.ts'],
     },
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        directory: './tsconfig.json'
-      }
-    }
+        directory: './tsconfig.json',
+      },
+    },
   },
   rules: {
     'import/order': [
@@ -42,20 +42,20 @@ module.exports = {
           'internal',
           'parent',
           'sibling',
-          'index'
+          'index',
         ],
         pathGroups: [
           {
             pattern: '@_models/**',
-            group: 'internal'
-          }
+            group: 'internal',
+          },
         ],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
-          caseInsensitive: true
-        }
-      }
+          caseInsensitive: true,
+        },
+      },
     ],
 
     '@typescript-eslint/no-use-before-define': 'off',
@@ -63,16 +63,16 @@ module.exports = {
     '@typescript-eslint/no-empty-function': [
       'error',
       {
-        allow: ['methods']
-      }
-    ]
+        allow: ['methods'],
+      },
+    ],
   },
   overrides: [
     {
       files: ['.eslintrc.cjs'],
       env: {
-        node: true
-      }
-    }
-  ]
+        node: true,
+      },
+    },
+  ],
 };
