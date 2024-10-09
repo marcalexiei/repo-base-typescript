@@ -3,12 +3,12 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "ESNext",
-    "lib": ["ES6", "DOM"],
-    "outDir": "./dist",
+    "lib": ["ES6"],
     "strict": true,
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
   }
 }

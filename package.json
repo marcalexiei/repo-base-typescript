@@ -11,6 +11,7 @@
     "prepare": "husky",
     "test": "echo \"Error: no test specified\" && exit 0",
     "build": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "lint": "eslint . --ext .js,.ts",
@@ -27,7 +28,7 @@
     "eslint-plugin-import": "2.29.1",
     "husky": "9.1.6",
     "prettier": "3.3.3",
-    "typescript": "5.3.3"
+    "typescript": "5.5.4"
   },
   "repository": {
     "type": "git",

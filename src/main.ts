@@ -1,3 +1,4 @@
 import { welcomeMessage } from './models/message';
 
-console.info(`message: ${welcomeMessage}`);
+const message = `message: ${welcomeMessage}`;
+message.trim();
