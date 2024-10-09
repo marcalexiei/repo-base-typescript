@@ -5,40 +5,38 @@
   "description": "",
   "type": "module",
   "engines": {
-    "node": ">= 20.10.0"
-  },
-  "scripts": {
-    "prepare": "husky",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "build": "tsc --project tsconfig.build.json",
-    "typecheck": "tsc",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write",
-    "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
-    "@typescript-eslint/eslint-plugin": "6.16.0",
-    "@typescript-eslint/parser": "6.16.0",
-    "eslint": "8.56.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-import": "2.29.1",
-    "husky": "9.1.6",
-    "prettier": "3.3.3",
-    "typescript": "5.5.4"
+    "node": ">= 18"
   },
   "repository": {
     "type": "git",
     "url": "git+https://marcalexiei@github.com/marcalexiei/repo-base-typescript.git"
   },
   "authors": "Marco Pasqualetti @marcalexiei",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcalexiei/repo-base-typescript/issues"
   },
   "homepage": "https://github.com/marcalexiei/repo-base-typescript#readme",
-  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca",
+  "scripts": {
+    "prepare": "husky",
+    "build": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
+    "@eslint/js": "9.12.0",
+    "@types/eslint__js": "8.42.3",
+    "eslint": "9.12.0",
+    "husky": "9.1.6",
+    "prettier": "3.3.3",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.8.1"
+  }
 }
