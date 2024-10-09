@@ -4,7 +4,9 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist', 'eslint.config.js'] },
+  {
+    ignores: ['dist'],
+  },
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {
@@ -13,5 +15,9 @@ export default tseslint.config(
         project: './tsconfig.json',
       },
     },
+  },
+  {
+    files: ['**/*.js'],
+    ...tseslint.configs.disableTypeChecked,
   },
 );
