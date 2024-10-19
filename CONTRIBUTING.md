@@ -2,20 +2,8 @@
 
 ## Setup instructions
 
-This repository uses:
-
-- `node` via [`nvm`](https://github.com/nvm-sh)
-- `pnpm` as package manager via `corepack`.
-
-```shell
-# install nvm
-nvm use
-```
-
-```shell
-corepack use pnpm
-```
+[https://marcalexiei.github.io/contribute/setup-pnpm-nvm.html](https://marcalexiei.github.io/contribute/setup-pnpm-nvm.html)
 
 ## Commit rules
 
-This repository uses [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0/).
+[https://marcalexiei.github.io/contribute/commit-rules.html](https://marcalexiei.github.io/contribute/commit-rules.html)
