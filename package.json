@@ -26,7 +26,8 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "check-all": "pnpm run \"/^(lint|format|test|typecheck|build)$/\""
   },
   "devDependencies": {
     "@commitlint/cli": "19.5.0",
