@@ -9,9 +9,35 @@ on:
       - main
 
 env:
+  HUSKY: 0
   CI: true
 
 jobs:
+  test:
+    name: Test (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [20, 22]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        uses: ./.github/actions/install-dependencies
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Run build
+        run: pnpm run build
+
+      - name: Run test
+        run: pnpm run test
+
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -19,7 +45,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        script: [build, typecheck, lint, format, test]
+        script: [typecheck, lint, format]
 
     steps:
       - name: Checkout
@@ -35,7 +61,7 @@ jobs:
     name: CI OK
     runs-on: ubuntu-latest
     if: always()
-    needs: [check]
+    needs: [test, check]
     env:
       FAILURE: ${{ contains(join(needs.*.result, ','), 'failure') }}
     steps:
