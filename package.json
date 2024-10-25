@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/marcalexiei/repo-base-typescript#readme",
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
+  "prettier": "@marcalexiei/prettier-config",
   "scripts": {
     "prepare": "husky",
     "build": "tsc --project tsconfig.build.json",
@@ -33,6 +34,7 @@
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@eslint/js": "9.12.0",
+    "@marcalexiei/prettier-config": "1.0.0",
     "@types/eslint__js": "8.42.3",
     "eslint": "9.12.0",
     "husky": "9.1.6",

@@ -17,6 +17,9 @@ importers:
       '@eslint/js':
         specifier: 9.12.0
         version: 9.12.0
+      '@marcalexiei/prettier-config':
+        specifier: 1.0.0
+        version: 1.0.0(prettier@3.3.3)
       '@types/eslint__js':
         specifier: 8.42.3
         version: 8.42.3
@@ -168,6 +171,12 @@ packages:
   '@humanwhocodes/retry@0.3.1':
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
+
+  '@marcalexiei/prettier-config@1.0.0':
+    resolution: {integrity: sha512-+zb8rOqKT/HtMZcbJtRPNasS+7E9G+ygTwF5gsf1Ftaz4nDbR/DFpHIau9GO0Ro98MHKvv1sqz16JeYrfAqn1w==}
+    engines: {node: '>= 20'}
+    peerDependencies:
+      prettier: ^2.8.0 || ^3.0.0
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1081,6 +1090,10 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.1': {}
+
+  '@marcalexiei/prettier-config@1.0.0(prettier@3.3.3)':
+    dependencies:
+      prettier: 3.3.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
