@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://marcalexiei@github.com/marcalexiei/repo-base-typescript.git"
   },
+  "keywords": [],
   "author": "Marco Pasqualetti @marcalexiei",
   "license": "MIT",
   "bugs": {
