@@ -32,15 +32,14 @@
     "check-all": "pnpm run \"/^(lint|format|test|typecheck|build)$/\""
   },
   "devDependencies": {
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
-    "@eslint/js": "9.14.0",
-    "@marcalexiei/prettier-config": "1.0.4",
-    "@types/eslint__js": "8.42.3",
-    "eslint": "9.14.0",
-    "husky": "9.1.6",
-    "prettier": "3.3.3",
-    "typescript": "5.6.3",
-    "typescript-eslint": "8.13.0"
+    "@commitlint/cli": "19.6.1",
+    "@commitlint/config-conventional": "19.6.0",
+    "@eslint/js": "9.18.0",
+    "@marcalexiei/prettier-config": "1.1.0",
+    "eslint": "9.18.0",
+    "husky": "9.1.7",
+    "prettier": "3.4.2",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.19.1"
   }
 }
