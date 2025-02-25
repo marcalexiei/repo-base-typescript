@@ -1,5 +1,4 @@
 {
-  "include": ["src", "tests", "commitlint.config.js", ".eslintrc.cjs"],
   "compilerOptions": {
     "target": "ES6",
     "module": "ESNext",
