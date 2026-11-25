@@ -29,7 +29,7 @@
     "format:fix": "prettier . --write",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "check-all": "pnpm run \"/^(lint|format|test|typecheck|build)$/\""
+    "validate": "pnpm run \"/^(lint|format|test|typecheck|build)$/\""
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
